@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background-image: url("../imgs/bg_image.jpg");
+}
+
+#container{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    
+    height: 100vh;
+}
+
+#login-box{
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 0px 5px;
+    background-color: skyblue;
+}
+
+#form-title{
+    font-size: 150%;
+    font-weight: bold;
+    /* background-color: lightgreen; */
+    margin: 10px 5px;
+    border-bottom: solid 1px black;
+}
+
+.id-info{
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#send-button{
+    width: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#make-new-account{
+    border-bottom: solid 1px black;
+}

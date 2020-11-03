@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    background-image: url("../imgs/bg_image.jpg");
+}
+
+#chat-container{
+    display: grid;
+    grid-template:
+        "left center right" auto
+    /    auto  1500px auto;
+}
+
+#left-space{
+    grid-area: left;
+    /* background-color: silver; */
+}
+
+#center{
+    grid-area: center;
+}
+
+#right-space{
+    grid-area: right;
+    /* background-color: silver; */
+}
+
+#center{
+    background-color: white;
+    display: grid;
+    grid-template: 
+        "header header" 7vh
+        "list   screen" 93vh
+        /30%    70%;
+}
+
+#header{
+    grid-area: header;
+    background-color: skyblue;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#friend-list{
+    grid-area: list;
+    border-right: solid 1px lightgray;
+}
+
+#friend-list::-webkit-scrollbar { 
+    display:none;
+}
+
+#chat-screen{
+    overflow-y: scroll;
+    grid-area: screen;
+}
+
+#chat-screen::-webkit-scrollbar { 
+    display:none;
+}
+
+/* details */
+#friend-list{
+    overflow-y: scroll;
+}
+
+#search-friend{
+    padding: 10px 10px;
+}
+
+.person{
+    display: flex;
+    border-top: solid 1px lightgray;
+    background-color: skyblue;
+}
+
+.person:last-child{
+    border-bottom: solid 1px lightgray;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.text-info{
+    margin: 10px 5px;
+    width: 100%;
+}
+.personal-meta-data{
+    display: flex;
+}
+
+.user-name{
+    font-weight: bold;
+}
+
+.last-message-date{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.short-message-display{
+    margin: 5px;
+}
+
+
+/* chat screen */
+#chat-box{
+    margin: 20px 20px 0px 20px;
+}
+
+#talk-with{
+    position: sticky;
+    top: 0;
+    z-index:1;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 15px;
+    border-bottom: solid 1px lightgray;
+    background-color: rgb(255, 255, 255);
+}
+
+.talk-from-friend{
+    display: flex;
+    margin: 10px 0;
+}
+
+.talk-from-me{
+    display: flex;
+    margin: 10px 0;
+}
+
+.talk-from-friend .message{
+    margin-left: 5px;
+    padding: 15px 15px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.talk-from-me .message{
+    margin-left: 5px;
+    padding: 15px 15px;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+#typing-box{
+    position: sticky;
+    bottom: 0;
+    z-index:1;
+    padding: 15px 10px 5px 10px;
+    background-color: lightblue;
+}
+
+#typing-input{
+    width: 100%;
+    border-style: none;
+    outline: none;
+    border-bottom: solid 2px black;
+    background-color: lightblue;
+}
